@@ -1,0 +1,177 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ #acf-group_61636c62b003e {
+   min-height: 400px;
+ }
+ 
+ .mapster-map-loader {
+  position: absolute;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding-top: 50px;
+ }
+
+/* strengthening geocoder css */
+.mapboxgl-ctrl .mapboxgl-ctrl-geocoder--input {
+  padding: 6px 35px;
+}
+.mapboxgl-ctrl .suggestions li {
+  margin-bottom: 0;
+}
+
+/* dropdown list modifications */
+.mapster-maps-dropdown .mapboxgl-ctrl-geocoder--input:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+.mapster-maps-dropdown .mapboxgl-ctrl-geocoder--button {
+  background: transparent;
+}
+.mapster-maps-dropdown .suggestions li.active > a {
+  background: none;
+}
+.mapster-maps-dropdown .suggestions li > a:hover {
+  background: #eee;
+}
+
+/* category control */
+.mapster-category-control {
+  border-radius: 4px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 4%);
+  min-width: 200px;
+}
+.mapster-category-control h3 {
+  margin: 0;
+  padding: 0;
+}
+.mapster-category-control label {
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+.mapster-category-control > div > ul {
+  padding-left: 0px;
+}
+.mapster-category-control ul {
+  margin : 0px;
+  padding-left: 10px;
+  list-style-type : none;
+}
+
+.mapster-category-control .mapster-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  margin-top: -4px;
+  margin-right: 5px;
+}
+
+.mapster-category-control .mapster-switch input {
+  all : revert;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.mapster-category-control .mapster-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.mapster-category-control .mapster-slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.mapster-category-control input:checked + .mapster-slider {
+  background-color: #2196F3;
+}
+
+.mapster-category-control input:focus + .mapster-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.mapster-category-control input:checked + .mapster-slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.mapster-category-control .mapster-slider.mapster-round {
+  border-radius: 34px;
+}
+
+.mapster-category-control .mapster-slider.mapster-round:before {
+  border-radius: 50%;
+}
+
+.mapster-category-control .mapster-color-swatch {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* list control */
+.mapster-list-control {
+  border-radius: 4px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 4%);
+  min-width: 200px;
+}
+.mapster-list-control ul {
+  margin : 0px;
+  padding: 0;
+  list-style-type : none;
+}
+.mapster-list-control li {
+  padding: 5px;
+  margin: 0;
+  border-radius: 4px;
+}
+.mapster-list-control li:hover {
+  background: #eee;
+  cursor : pointer;
+}
+.mapster-list-control em {
+  font-size: smaller;
+}
+.mapster-list-control .mapster-paging {
+  float: right;
+}
+.mapster-list-control .mapster-paging span:hover {
+  cursor: pointer;
+  background : #eee;
+}
+
+/* // From: Pitch toggle control for Mapbox GL JS — http://fuzzytolerance.info/blog/2017/01/30/Pitch-toggle-control-for-Mapbox-GL-JS/ */
+.mapboxgl-ctrl-pitchtoggle-3d {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+ICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkeT0iLjM1ZW0iIHN0eWxlPSJmb250LXNpemU6IDE0cHg7IGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhIE5ldWUnLEFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmOyBmb250LXdlaWdodDogYm9sZDsgdGV4dC1hbmNob3I6IG1pZGRsZTsiPjNEPC90ZXh0Pjwvc3ZnPg==);
+}
+
+.mapboxgl-ctrl-pitchtoggle-2d {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+ICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkeT0iLjM1ZW0iIHN0eWxlPSJmb250LXNpemU6IDE0cHg7IGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhIE5ldWUnLEFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmOyBmb250LXdlaWdodDogYm9sZDsgdGV4dC1hbmNob3I6IG1pZGRsZTsiPjJEPC90ZXh0Pjwvc3ZnPg==);
+}

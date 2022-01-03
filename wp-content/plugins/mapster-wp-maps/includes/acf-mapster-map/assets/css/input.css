@@ -1,0 +1,53 @@
+.mapster-map-container {
+  display: flex;
+}
+.mapster-map-container > div {
+  width: 50%;
+}
+.mapster-map-container .mapster-map-input-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mapster-map-container .mapster-map-input-container .button-container {
+  text-align: right;
+  margin-top: 10px;
+}
+.mapster-map-container #finish-drawing div {
+  margin-top: 10px;
+  display: none;
+}
+.mapster-map-container .mapster-map-line {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mapster-map-container hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+
+#mapster-geocoder-results {
+  position: absolute;
+  background: white;
+  margin-top: 0px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: thin solid #eee;
+  z-index: 1000;
+}
+#mapster-geocoder-results li {
+  border-bottom: thin solid #ccc;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+}
+#mapster-geocoder-results li:hover {
+  background: #eee;
+}

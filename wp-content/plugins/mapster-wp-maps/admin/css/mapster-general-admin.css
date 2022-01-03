@@ -1,0 +1,14 @@
+
+.menu-icon-mapster-wp-map ul li:nth-child(3) {
+  display: none;
+}
+.menu-icon-mapster-wp-map ul li:nth-child(4) {
+  display: none;
+}
+
+.post-type-mapster-wp-polygon .acf-field-group > .acf-label > label,
+.post-type-mapster-wp-map .acf-field-group > .acf-label > label,
+.post-type-mapster-wp-location .acf-field-group > .acf-label > label,
+.post-type-mapster-wp-line .acf-field-group > .acf-label > label {
+  font-size: larger;
+}
